@@ -25,25 +25,23 @@
   background-size: 400% 400%;
   animation: gradientShift 4s infinite ease-in-out;
 
-  background-color: #282c34;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  text-decoration: none;
+  margin-left: 120px;
+  margin-top: 400px;
+  font-family: Gabarito, sans-serif;
+
+}
+
+.App-header {
+  background-color: #230932;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: calc(50px + 2vmin);
 }
