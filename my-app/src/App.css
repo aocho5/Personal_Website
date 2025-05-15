@@ -7,13 +7,24 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes gradientShift{
+  0% {
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-.App-header {
+.App-name {
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #ff0080);
+
+  background-size: 400% 400%;
+  animation: gradientShift 4s infinite ease-in-out;
+
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
