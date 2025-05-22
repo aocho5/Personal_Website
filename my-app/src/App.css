@@ -1,12 +1,6 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 /* Name animation */
 @keyframes gradientShift{
   0% {
@@ -22,32 +16,34 @@
 
 /* Name styling */
 .App-name {
-  background: linear-gradient(270deg, #ff0080, #ff8c00, #ff0080);
+  background: linear-gradient(270deg, #750bd9, #9e58e4d8, #eb51d1);
 
   background-size: 400% 400%;
-  animation: gradientShift 4s infinite ease-in-out;
+  animation: gradientShift 5s infinite ease-in-out;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
-  text-decoration: none;
-  margin-left: 120px;
+  margin-left:350px;
   margin-top: 150px;
   font-family: Gabarito, sans-serif;
+  font-size: 3rem;
 
 }
 
 /* Background styling */
 .App-header {
-  background-color: #230932;
+  background: linear-gradient(200deg, #ffd6e8, #fbb8d4, #fca9ca);
   min-height: 100vh;
+  min-width: 120vh;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  font-size: calc(50px + 2vmin);
+
+ 
 }
+
 
 /* Image styling */
 .Profile-image {
@@ -55,8 +51,33 @@
   height: 400px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgb(142, 88, 157);
+  border: 4px solid rgb(186, 11, 230);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
-  margin-left: 120px;
+  margin-left:350px;
 }
+/* Layout: profile-info and rectangle side by side */
+.Profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(4px, 15vw, 100px);
+}
+
+/* Stack image and name vertically */
+.Profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Rectangle {
+  width: 700px;
+  height: 900px;
+  background: linear-gradient(270deg, 270deg, #5a00b3, #ec3ae9c8, #cf0a94);
+
+  background-color:  #ee99cf;
+  border: 4px solid rgb(186, 11, 230);
+  border-radius: 8px;
+  margin-right: 400px;
+}
+
+
