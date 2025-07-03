@@ -1,5 +1,6 @@
 import './App.css';
 import screenshot from './images/screenshot-2025-04-15.png';
+import image from './images/projectIcon.png';
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
             </a>
           </div>
           <div className="Rectangle" />
+            <div className="Circle Circle1">
+              <img src={image} alt="Project Icon" className="Circle-image" />
+            </div>
+            <div className="Circle Circle2"></div>
+            <div className="Circle Circle3"></div>
+            <div className="Circle Circle4"></div>
         </div>
       </header>
     </div>
